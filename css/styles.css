@@ -1,0 +1,371 @@
+/*
+Adobe Fonts (font-style:italic included)
+    Scotch Micro Bold
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    Scotch Micro Regular
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    New Hero Regular
+    font-family: new-hero, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    New Hero Bold
+    font-family: new-hero, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    Le Havre Black
+    font-family: le-havre, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+    Le Havre Thin
+    font-family: le-havre, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+Colors
+    Scarlet - #FF3A20
+    Deep Blue - #29339B
+    Mint - #B6D6CC
+    Flourescent Cream - #F1FEC6
+    Slate - #74A4BC
+*/
+
+/*Style Reset*/
+body, header, footer, div, img, h1, h2, h3, main, section, p, button, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a, ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Scroll Bar Styles*/
+::-webkit-scrollbar {
+    width: .95em;
+}
+  
+::-webkit-scrollbar-track {
+    background: #fff;
+    border: 1px solid #29339B;
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #29339B; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3a20;
+}
+
+/*Basic Styles*/ 
+body {
+    background: #ffffff;
+    background-image: url("../images/amoeba-pattern.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 5em;
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    color: #29339B;
+}
+
+a:hover {
+    color: #ff3a20;
+}
+
+section {
+    padding: 2em 0 2em 5em;
+}
+
+input {
+    border: 1px solid #29339B;
+}
+
+button {
+    background-color: #29339B;
+    color: #fff;
+    margin: 0 1em;
+    border-radius: 100px;
+    padding: .5em 1em .5em 1em;
+}
+
+button:hover {
+    background-color: #ff3a20;
+}
+
+p,button {
+    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-copy-home {
+    margin-top: 8vh;
+    border-top: 1px solid #29339B;
+    background-color: #ffffff;
+    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-contact, .main-portfolio {
+    background-color: #fff;
+}
+
+/*Header Styles*/
+header {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #29339B;
+}
+
+header .header-logo {
+    display: inline;
+    text-align: center;
+    margin: .5em 2em .5em 4em;
+    font-size: 2em;
+    font-family: le-havre, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+header img {
+    display: inline;
+    float: left;
+    max-height: 100px;
+}
+
+header nav {
+    margin: 2em 0em 1em auto;
+    font-size: 1.8em;
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header ul {
+    display: inline;
+}
+
+header ul li{
+    display: inline;
+    margin: 0 4em 0 0;
+}
+
+/*Main Styles*/
+
+.hero-text {
+    margin: .5em 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15em;
+    font-family: le-havre, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.sect1, .sect2 {
+    border-bottom: 1px solid #29339B;
+}
+
+.home-portfolio-link {
+    text-align: center;
+    margin: 3em auto 3em;
+    padding:0 0 3em 3em;
+    border-bottom: 1px solid #29339B;
+}
+
+.home-portfolio-link h3 {
+    display: inline;
+    margin: 1em;
+    font-family: scotch-modern-micro, helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+/*Portfolio Page Styles*/
+.portfolio-links {
+    display: grid;
+    grid-template-areas: 
+    "web nothing ui/ux nothing"
+    "nothing graphic nothing personal";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: scotch-modern-micro, helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    border-bottom: 1px solid #29339B;
+}
+
+.port-link-web {
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:1;
+    grid-row-end:1;
+}
+
+.port-link-gd {
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.port-link-uiux {
+    grid-column-start:3;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:1;
+}
+
+.port-link-pers {
+    grid-column-start:4;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.portfolio-links img {
+    max-width: 22vw;
+    border: 1px solid #29339B;
+    border-radius: 100000px;
+}
+
+
+/*Contact Page Styles*/
+.about {
+    display: grid;
+    grid-template-areas: 
+    "contact image"
+    "contact image"
+    "contact image";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    border-bottom: 1px solid #29339B;
+}
+
+.about img {
+    max-height: 500px;
+    border: 1px solid #29339B;
+    border-radius: 10000px;
+}
+
+/*individual portfolio Page Styles*/
+
+.main-portfolio .project img {
+    max-height: 300px;
+    border: 1px solid #29339B;
+    border-radius: 1000px;
+}
+
+.project-screenshot img {
+    max-height: 500px;
+}
+
+.portfolio-header {
+    padding: 3em;
+    border-bottom: 1px solid #29339B;
+}
+
+.project-links img {
+    max-width: 550px;
+    border-radius: 10000px;
+    border: 1px solid #29339B;
+}
+
+/*Footer Styles*/
+
+footer {
+    background-color: #ffffff;
+    color: #29339B;
+    padding-bottom: 1em;
+    text-align: center;
+    border-top: 1px solid #29339B;
+    font-size: .8em;
+    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer a {
+    color: #29339B;
+}
+
+footer a:hover {
+    color: #ff3a20;
+}
+
+.top-arrow {
+    margin: 3em 0 7em 0;
+}
+.top-arrow img {
+    display: block;
+    margin: 0 auto;
+    max-height: 50px;
+    color: #29339B;
+}
+
+.footer-flex {
+    margin: 0 4em;
+    padding-bottom: 4em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact, .footer-logo, .footer-social-media {
+    font-size: 1.25em;
+    flex-basis: 0;
+    flex: 1 1 0px;
+}
+
+.contact {
+    text-align: left;
+}
+
+.footer-logo img {
+    max-height: 120px;
+}
+
+.footer-social-media {
+    text-align: right;
+}
+
+.footer-social-media img {
+    margin-left: 1em;
+    height: 50px;
+}
+
+.insta-logo:hover, .yt-logo:hover, .wp-logo:hover, .linkin-logo:hover {
+    padding-bottom: .25em;
+    border-bottom: 1px solid #29339B;
+}
