@@ -38,8 +38,9 @@ Colors
     Slate - #74A4BC
 */
 
-/*Style Reset*/
-body, header, footer, div, img, h1, h2, h3, main, section, p, button, input {
+/**********************************************************Style Reset*/
+html, body, header, footer, nav, div, img, h1, h2, h3, ul, li, main, section, p, button, input {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -52,7 +53,7 @@ a, ul, li {
     list-style: none;
 }
 
-/*Scroll Bar Styles*/
+/**********************************************************Scroll Bar Styles*/
 ::-webkit-scrollbar {
     width: .95em;
 }
@@ -72,38 +73,17 @@ a, ul, li {
     background: #ff3a20;
 }
 
-/*Basic Styles*/ 
-body {
-    background: #ffffff;
-    background-image: url("../images/amoeba-pattern.png");
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-h2 {
-    font-size: 5em;
-    font-family: scotch-modern-micro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h3 {
-    font-size: 1.5em;
-    font-family: scotch-modern-micro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
+/**********************************************************Page-Wide Styles*/
 a {
     color: #29339B;
+    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-a:hover {
+a:hover,
+a:active {
     color: #ff3a20;
-}
-
-section {
-    padding: 2em 0 2em 5em;
 }
 
 input {
@@ -111,261 +91,183 @@ input {
 }
 
 button {
+    text-align: center;
+    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #29339B;
     color: #fff;
-    margin: 0 1em;
+    margin: 1em;
+    padding: .5em 1em;
     border-radius: 100px;
-    padding: .5em 1em .5em 1em;
 }
 
-button:hover {
+button:hover,
+button:active {
     background-color: #ff3a20;
 }
 
-p,button {
-    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+section {
+    padding: 1.5em 2em;
 }
 
-.main-copy-home {
-    margin-top: 8vh;
-    border-top: 1px solid #29339B;
-    background-color: #ffffff;
-    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.main-contact, .main-portfolio {
-    background-color: #fff;
-}
-
-/*Header Styles*/
+/**********************************************************Header Styles*/
 header {
+    max-width: 100%;
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     background-color: #ffffff;
     border-bottom: 1px solid #29339B;
+    padding: 2em;
 }
 
-header .header-logo {
-    display: inline;
+header h1{
     text-align: center;
-    margin: .5em 2em .5em 4em;
-    font-size: 2em;
     font-family: le-havre, sans-serif;
     font-weight: 200;
     font-style: normal;
+    font-size: 2em;
+    margin: 0;
 }
 
 header img {
-    display: inline;
-    float: left;
-    max-height: 100px;
+    align-self: baseline;
+    max-height: 8em;
+    margin: 0;
 }
 
-header nav {
-    margin: 2em 0em 1em auto;
-    font-size: 1.8em;
+nav {
+    align-self: flex-end;
+    text-align: right;
+}
+
+nav a {
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+
+/**********************************************************Main Styles*/
+main {
+    max-width: 100vw;
+}
+
+.hero {
+    background-image: url(/images/hero-img.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio-hero {
+    background-image: url(/images/hero-img.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-hero {
+    background-image: url(/images/hero-img.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h2,
+.portfolio-hero h2,
+.project-hero h2 {
+    padding: 2em;
+    text-align: center;
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+}
+
+.about h2 {
+    font-family: scotch-modern-micro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: .2em;
+}
+
+.about img {
+    border-radius: 5em;
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
     font-family: scotch-modern-micro, sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-header ul {
-    display: inline;
-}
-
-header ul li{
-    display: inline;
-    margin: 0 4em 0 0;
-}
-
-/*Main Styles*/
-
-.hero-text {
-    margin: .5em 0;
-    color: #ffffff;
-    text-align: center;
-    font-size: 15em;
-    font-family: le-havre, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.sect1, .sect2 {
-    border-bottom: 1px solid #29339B;
-}
-
-.home-portfolio-link {
-    text-align: center;
-    margin: 3em auto 3em;
-    padding:0 0 3em 3em;
-    border-bottom: 1px solid #29339B;
-}
-
-.home-portfolio-link h3 {
-    display: inline;
-    margin: 1em;
-    font-family: scotch-modern-micro, helvetica, arial, sans-serif;
-    font-weight: 700;
-    font-style: normal; 
-}
-
-/*Portfolio Page Styles*/
-.portfolio-links {
-    display: grid;
-    grid-template-areas: 
-    "web nothing ui/ux nothing"
-    "nothing graphic nothing personal";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-family: scotch-modern-micro, helvetica, arial, sans-serif;
-    font-weight: 700;
-    font-style: normal; 
-    border-bottom: 1px solid #29339B;
-}
-
-.port-link-web {
-    grid-column-start:1;
-    grid-column-end:1;
-    grid-row-start:1;
-    grid-row-end:1;
-}
-
-.port-link-gd {
-    grid-column-start:2;
-    grid-column-end:2;
-    grid-row-start:2;
-    grid-row-end:2;
-}
-
-.port-link-uiux {
-    grid-column-start:3;
-    grid-column-end:3;
-    grid-row-start:1;
-    grid-row-end:1;
-}
-
-.port-link-pers {
-    grid-column-start:4;
-    grid-column-end:4;
-    grid-row-start:2;
-    grid-row-end:2;
-}
-
-.portfolio-links img {
-    max-width: 22vw;
-    border: 1px solid #29339B;
-    border-radius: 100000px;
-}
-
-
-/*Contact Page Styles*/
-.about {
-    display: grid;
-    grid-template-areas: 
-    "contact image"
-    "contact image"
-    "contact image";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    border-bottom: 1px solid #29339B;
-}
-
-.about img {
-    max-height: 500px;
-    border: 1px solid #29339B;
-    border-radius: 10000px;
-}
-
-/*individual portfolio Page Styles*/
-
-.main-portfolio .project img {
-    max-height: 300px;
-    border: 1px solid #29339B;
-    border-radius: 1000px;
-}
-
-.project-screenshot img {
-    max-height: 500px;
-}
-
-.portfolio-header {
-    padding: 3em;
-    border-bottom: 1px solid #29339B;
-}
-
-.project-links img {
-    max-width: 550px;
-    border-radius: 10000px;
-    border: 1px solid #29339B;
-}
-
-/*Footer Styles*/
-
-footer {
-    background-color: #ffffff;
-    color: #29339B;
-    padding-bottom: 1em;
-    text-align: center;
+section {
     border-top: 1px solid #29339B;
-    font-size: .8em;
+    background-color: #ffffff;
     font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-footer a {
-    color: #29339B;
+p {
+    font-family: new-hero, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-footer a:hover {
-    color: #ff3a20;
-}
 
-.top-arrow {
-    margin: 3em 0 7em 0;
-}
-.top-arrow img {
-    display: block;
-    margin: 0 auto;
-    max-height: 50px;
-    color: #29339B;
-}
 
-.footer-flex {
-    margin: 0 4em;
-    padding-bottom: 4em;
+/**********************************************************Footer Styles*/
+footer {
+    padding-top: 2em;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #29339B;
+    border-top: 1px solid #29339B;
 }
 
-.contact, .footer-logo, .footer-social-media {
-    font-size: 1.25em;
-    flex-basis: 0;
-    flex: 1 1 0px;
+.footer-arrow {
+    order: -2;
 }
 
-.contact {
-    text-align: left;
+.footer-logo {
+    order: -1;
+    text-align: center;
+}
+
+.footer-arrow img {
+    max-width:10em;
 }
 
 .footer-logo img {
-    max-height: 120px;
-}
-
-.footer-social-media {
-    text-align: right;
+    max-height: 8em;
+    margin: .8em 0;
 }
 
 .footer-social-media img {
-    margin-left: 1em;
-    height: 50px;
+    margin: 2em 1em;
+    height: 2em;
 }
 
-.insta-logo:hover, .yt-logo:hover, .wp-logo:hover, .linkin-logo:hover {
-    padding-bottom: .25em;
-    border-bottom: 1px solid #29339B;
+.footer-copyright {
+    margin: 2em 0;
 }
+
+
+
