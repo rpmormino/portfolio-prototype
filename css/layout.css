@@ -12,6 +12,22 @@ xl, extra-large: 1536px
 */
 
 /*Header Layout*/
+@media (min-width: 0px) {
+
+    .home-port-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2em 0 2em 0;
+    }
+    
+    .home-port-links a {
+        font-size: 1em;
+        margin: 1em;
+    }
+}
+
+/*****************************************************************SM Viewport*/
 @media (min-width: 650px) {
 
     header {
@@ -22,6 +38,16 @@ xl, extra-large: 1536px
     header li {
         display: inline;
         margin-left: 2em;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2em;
+    }
+
+    .about-text {
+        grid-column: 1;
     }
 
     footer {
@@ -66,16 +92,30 @@ xl, extra-large: 1536px
     }
 }
 
+/*****************************************************************MD Viewport*/
 @media (min-width: 900px) {
     header .logo {
         margin-left: 3em;
     }
-    header nav{
-        margin-right: 6em;
+
+    .hero h2,
+    .portfolio-hero h2,
+    .project-hero h2 {
+        padding: 1em;
+        text-align: center;
+        font-family: scotch-modern-micro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 5em;
     }
 
     section {
-        padding: 2em 0 2em 6em;
+        padding: 2em 2em 2em 6em;
+    }
+
+    .home-port-links a {
+        font-size: 1.3em;
+        margin: 1.5em;
     }
 
     footer {
@@ -122,21 +162,83 @@ xl, extra-large: 1536px
     }
 }
 
-
+/*****************************************************************L Viewport*/
 @media (min-width: 1200px) {
 
     .footer-social-media img {
         height: 3em;
     }
 
-}
-
-
-@media (min-width: 1600px) {
-    body {
-        background-color: green;
+    .about {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 3;
     }
 
+    .about-image {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+    .contact {
+        grid-row: 2;
+    }
+
+}
+
+/*****************************************************************XL Viewport*/
+@media (min-width: 1600px) {
+    header {
+        display: grid;
+        grid-template-columns: 8em 1fr 1fr 8em;
+        align-content: end;
+    }
+
+    header .logo {
+        grid-column: 2;
+    }
+
+    header .logo h1 {
+        text-align: left;
+    }
+
+    nav {
+        grid-column: 3;
+        align-items: end;
+    }
+
+    .home-port-links a {
+        font-size: 1.5em;
+        margin: 1.7em;
+    }
+
+    section p {
+        margin-left: 7em;
+    }
+
+    section input {
+        margin-left: 7em;
+    }
+
+    .about {
+        padding: 2em 0 0 6em;
+        grid-gap: 3em;
+    }
+
+    .about p {
+        margin-left: 0em;
+    }
+
+    .about-text,
+    .contact {
+        margin-left: 7em;
+    }
+
+    .contact {
+        margin-top: 0;
+    }
+
+    .about-image {
+        margin-right: 7em;
+    }
 }
 
 
