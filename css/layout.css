@@ -241,10 +241,3 @@ xl, extra-large: 1536px
     }
 }
 
-
-@media (min-width: 1900px) {
-    body {
-        background-color: magenta;
-    }
-
-}
