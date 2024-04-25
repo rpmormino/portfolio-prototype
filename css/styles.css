@@ -280,7 +280,6 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-bottom: 64px;
   }
   
   .carousel-container {
@@ -295,7 +294,7 @@ footer {
   
   .carousel-slide {
     flex: 1 0 90%;
-    aspect-ratio: 1;
+    height: 50vh;
     flex-flow: column nowrap;
     display: flex;
     justify-content: center;
