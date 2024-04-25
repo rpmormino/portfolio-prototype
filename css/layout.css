@@ -90,6 +90,11 @@ xl, extra-large: 1536px
         grid-column: 1/3;
         text-align: center;
     }
+    
+    .carousel-slide {
+        flex: 1 0 30%;
+    }
+
 }
 
 /*****************************************************************MD Viewport*/
