@@ -154,7 +154,7 @@ main {
 }
 
 .hero {
-    background-image: url(/images/hero-img.gif);
+    background-image: url(/images/amoeba-pattern.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@ main {
 }
 
 .portfolio-hero {
-    background-image: url(/images/hero-img.gif);
+    background-image: url(/images/amoeba-pattern.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
