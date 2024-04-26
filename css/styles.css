@@ -154,7 +154,7 @@ main {
 }
 
 .hero {
-    background-image: url(/images/amoeba-pattern.png);
+    background-image: url(../images/amoeba-pattern.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@ main {
 }
 
 .portfolio-hero {
-    background-image: url(/images/amoeba-pattern.png);
+    background-image: url(../images/amoeba-pattern.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ main {
 }
 
 #mfm-header {
-    background-image: url(/images/portfolio-projects/mfm-header.jpg);
+    background-image: url(../images/portfolio-projects/mfm-header.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@ main {
 }
 
 #right-meow-header {
-    background-image: url(/images/portfolio-projects/right-meow-header.png);
+    background-image: url(../images/portfolio-projects/right-meow-header.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@ main {
 }
 
 #sacred-fig-header {
-    background-image: url(/images/portfolio-projects/sacred-fig-header.jpg);
+    background-image: url(../images/portfolio-projects/sacred-fig-header.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@ main {
 }
 
 #amsterdam-header {
-    background-image: url(/images/portfolio-projects/amsterdam-header.jpg);
+    background-image: url(../images/portfolio-projects/amsterdam-header.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -220,6 +220,11 @@ main {
     display: flex;
     flex-direction: column;
     border: 0px;
+}
+
+.portfolio-links img {
+    max-height: 10em;
+    margin-bottom: 2em;
 }
 
 .about h2 {
